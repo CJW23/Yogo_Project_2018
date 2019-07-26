@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recommendmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    android:orientation="vertical"
+    android:weightSum="11">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.77">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.63">
+
+        <ImageView
+            android:id="@+id/weatherImg"
+            android:layout_width="154dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="92dp"
+            android:scaleType="fitXY" />
+
+
+        <ImageView
+            android:id="@+id/hairBackImage"
+            android:layout_width="120dp"
+            android:layout_height="330dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/test1"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/OuterBackClothesImage"
+            android:layout_width="120dp"
+            android:layout_height="330dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/out_longpback"
+            android:scaleType="fitXY" />
+
+
+        <ImageView
+            android:id="@+id/bodyImage"
+            android:layout_width="120dp"
+            android:layout_height="330dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/test2"
+            android:scaleType="fitXY" />
+
+
+
+        <ImageView
+            android:id="@+id/hairFrontImage"
+            android:layout_width="120dp"
+            android:layout_height="330dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/test5"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/TopBackClothesImage"
+            android:layout_width="120dp"
+            android:layout_height="330dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/TopClothesImage"
+            android:layout_width="120dp"
+            android:layout_height="330dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/test4"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/BottomClothesImage"
+            android:layout_width="120dp"
+            android:layout_height="330dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/test3"
+            android:scaleType="fitXY" />
+
+
+
+        <ImageView
+            android:id="@+id/OuterFrontClothesImage"
+            android:layout_width="120dp"
+            android:layout_height="330dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/out_longp"
+            android:scaleType="fitXY" />
+
+
+        <ImageView
+            android:id="@+id/TopHoodClothesImage"
+            android:layout_width="120dp"
+            android:layout_height="330dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY" />
+
+
+
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/gps_selector" />
+
+
+
+
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.6"
+        android:orientation="horizontal"
+        android:weightSum="3.6">
+
+        <ImageButton
+            android:id="@+id/leftCloButton"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_chevron_left_black_24dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/clothesline1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/cloImage1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bemin"
+                android:text="OUTER"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/clothesline2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cloImage2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bemin"
+                android:text="TOP"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/clothesline1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/cloImage3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+
+                android:scaleType="fitXY"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bemin"
+                android:text="BOTTOM"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/rightCloButton"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_chevron_right_black_24dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

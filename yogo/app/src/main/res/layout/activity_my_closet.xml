@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/closetRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="11"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="내 옷장"
+                android:fontFamily="@font/bemin"
+                android:textSize="25dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:gravity="center_vertical"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="아우터"
+            android:fontFamily="@font/bemin"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorGray"
+            android:gravity="center_vertical"/>
+
+        <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerBottomView"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="상의"
+            android:fontFamily="@font/bemin"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorGray"
+            android:gravity="center_vertical"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerTopView"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="하의"
+            android:fontFamily="@font/bemin"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorGray"
+            android:gravity="center_vertical"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerOuterView"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/clothesRegisterButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded"
+        android:text="옷장 등록"
+        android:textColor="#000000"
+        android:textSize="20dp"
+
+        android:textStyle="bold" />
+
+</LinearLayout>

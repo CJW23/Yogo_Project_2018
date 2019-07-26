@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="manOutertype">
+        <item>가디건</item>
+        <item>가죽자켓</item>
+        <item>데님자켓</item>
+        <item>항공점퍼</item>
+        <item>코트</item>
+        <item>블레이저</item>
+        <item>집업</item>
+        <item>패딩</item>
+        <item>야구점퍼</item>
+        <item>야상</item>
+    </string-array>
+    <string-array name="manToptype">
+        <item>조끼</item>
+        <item>니트</item>
+        <item>긴팔셔츠</item>
+        <item>긴팔티셔츠</item>
+        <item>맨투맨</item>
+        <item>7부티셔츠</item>
+        <item>7부셔츠</item>
+        <item>반팔셔츠</item>
+        <item>후드</item>
+    </string-array>
+    <string-array name="manBottomtype">
+        <item>데님팬츠</item>
+        <item>면바지</item>
+        <item>슬렉스</item>
+        <item>트레이닝바지</item>
+        <item>반바지</item>
+        <item>린넨바지</item>
+    </string-array>
+    <string-array name="womanOutertype">
+        <item>가디건</item>
+        <item>가죽자켓</item>
+        <item>데님자켓</item>
+        <item>항공점퍼</item>
+        <item>코트</item>
+        <item>블레이저</item>
+        <item>집업</item>
+        <item>패딩</item>
+        <item>야구점퍼</item>
+        <item>야상</item>
+    </string-array>
+    <string-array  name="womanToptype">
+        <item>조끼</item>
+        <item>니트</item>
+        <item>긴팔셔츠</item>
+        <item>긴팔티셔츠</item>
+        <item>맨투맨</item>
+        <item>7부티셔츠</item>
+        <item>반팔셔츠</item>
+        <item>블라우스</item>
+        <item>후드</item>
+        <item>미니원피스</item>
+        <item>롱원피스</item>
+        <item>점프슈트</item>
+    </string-array>
+    <string-array name="womanBottomtype">
+        <item>데님팬츠</item>
+        <item>면바지</item>
+        <item>슬렉스</item>
+        <item>트레이닝바지</item>
+        <item>반바지</item>
+        <item>미니스커트</item>
+        <item>미디스커트</item>
+        <item>롱스커트</item>
+        <item>치마레깅스</item>
+        <item>린넨바지</item>
+    </string-array>
+    <string-array name="color">
+        <item>검정</item>
+        <item>흰색</item>
+        <item>아이보리</item>
+        <item>베이지</item>
+        <item>하늘색</item>
+        <item>회색</item>
+        <item>파랑</item>
+        <item>빨강</item>
+        <item>노랑</item>
+        <item>카키</item>
+        <item>초록</item>
+        <item>남색</item>
+        <item>보라</item>
+        <item>주황</item>
+        <item>핑크</item>
+    </string-array>
+    <string-array name="weather">
+        <item>여름</item>
+        <item>겨을</item>
+        <item>봄/가을</item>
+    </string-array>
+    <string-array name="color2">
+        <item>빨강</item>
+        <item>주황</item>
+        <item>노랑</item>
+        <item>초록</item>
+        <item>파랑</item>
+        <item>남색</item>
+        <item>보라</item>
+        <item>검은색</item>
+        <item>흰색</item>
+        <item>회색</item>
+        <item>검청</item>
+        <item>진청</item>
+        <item>중청</item>
+        <item>연청</item>
+        <item>검체크</item>
+        <item>빨체크</item>
+        <item>초록체크</item>
+        <item>베이지</item>
+        <item>갈색</item>
+    </string-array>
+
+
+</resources>

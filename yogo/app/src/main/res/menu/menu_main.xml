@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yogo.pjh.weather_projcect_v10.clo.yogo.pjh.weather_projcect_v10.MainActivity">
+
+    <item
+        android:id="@+id/user_info"
+        android:icon="@drawable/ic_person_outline_black_24dp"
+        android:title="사용자정보"
+        app:showAsAction="ifRoom" />
+</menu>

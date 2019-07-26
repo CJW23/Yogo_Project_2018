@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/resgisterclothesmain"
+    tools:context="com.yogo.pjh.weather_projcect_v10.RegisterClothesActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="68dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="520dp"
+                android:orientation="vertical">
+
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="207dp">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="410dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@android:color/background_dark" />
+
+                    <ImageView
+                        android:id="@+id/clothesImageView"
+                        android:layout_width="203dp"
+                        android:layout_height="186dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="13dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_launcher"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imageView6"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageButton
+                        android:id="@+id/captureButton"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginBottom="21dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/plus"
+                        android:text="사진 촬영"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/myGalleyButton"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/clothesImageView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/myGalleyButton"
+                        android:layout_width="80dp"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/hanger"
+                        android:text="내 갤러리"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/clothesImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/captureButton"
+                        app:layout_constraintVertical_bias="0.659" />
+                </android.support.constraint.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/outer1" />
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/top1" />
+
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/bottom1" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/groupClothesType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/ClothesOuterRadioButton"
+                        android:layout_width="156dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="1"
+                        android:text="아우터" />
+
+                    <RadioButton
+                        android:id="@+id/ClothesTopRadioButton"
+                        android:layout_width="162dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="50dp"
+
+                        android:layout_weight="1"
+                        android:text="상의" />
+
+                    <RadioButton
+                        android:id="@+id/ClothesBottomButton"
+                        android:layout_width="147dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="1"
+                        android:text="하의" />
+                </RadioGroup>
+
+                <Spinner
+                    android:id="@+id/colorSpinner"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"></Spinner>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:text="저장하기"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/clothesTypeSpinner"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/submitButton"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="-5dp"></Spinner>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yogo.pjh.weather_projcect_v10.UserInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+    <TextView
+        android:id="@+id/infoNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/showUserName"
+        android:layout_below="@+id/infoNameText"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/infoAgeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나이"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/showUserAge"
+            android:layout_below="@+id/infoAgeText"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/infoGenderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성별"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/showUserGender"
+            android:layout_below="@+id/infoGenderText"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/infoEmailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이메일"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_gravity="center"
+                android:id="@+id/showUserEmail"
+                android:layout_below="@+id/infoEmailText"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="로그아웃"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/secessionButton"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="회원 탈퇴"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

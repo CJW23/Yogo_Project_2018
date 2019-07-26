@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yogo.pjh.weather_projcect_v10.LoginActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/c"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/a"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/loginMainImage"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/img_weather"
+                        tools:layout_editor_absoluteX="92dp"
+                        tools:layout_editor_absoluteY="39dp" />
+                </LinearLayout>-->
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--
+                <LinearLayout
+                    android:id="@+id/LoginLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <EditText
+
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:id="@+id/idText"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:hint="ID"
+                        android:inputType="textPersonName"
+                        android:padding="10dp"
+                        android:layout_marginTop="30dp"
+                        android:drawableStart="@drawable/ic_person_black_24dp"
+                        android:drawableLeft="@drawable/ic_person_black_24dp"/>
+
+                    <EditText
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:id="@+id/passwordText"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:hint="Password"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:inputType="textPassword"
+
+                        android:drawableStart="@drawable/ic_lock_black_24dp"
+                        android:drawableLeft="@drawable/ic_lock_black_24dp"/>
+
+
+                    <Button
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/loginButton"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:text="Login"
+                        tools:layout_editor_absoluteX="67dp"
+                        tools:layout_editor_absoluteY="382dp"
+                        android:background="@color/colorPrimaryDark"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textColor="#000000"
+                        android:id="@+id/registerButton"
+                        android:layout_marginTop="50dp"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="아직 ID가 없으신가요?  여기를 눌러주세요"
+                        android:layout_gravity="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+                </LinearLayout>
+                -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.kakao.usermgmt.LoginButton
+                        android:id="@+id/kakaoLoginButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

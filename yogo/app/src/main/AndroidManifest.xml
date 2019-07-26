@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yogo.pjh.weather_projcect_v10">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.yogo.pjh.weather_projcect_v10"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".FindIdActivity" />
+        <activity android:name=".RegisterClothesActivity" />
+        <activity
+            android:name=".UserInfoActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".MyClosetActivity" />
+        <activity android:name=".galleryboard" />
+        <activity android:name=".BoardActivity" />
+        <activity android:name=".PostActivity" />
+        <activity android:name=".FindFriendActivity" />
+        <activity android:name=".FriendClosetActivity" />
+        <activity
+            android:name=".RequestFriendActivity"
+            android:label="@string/title_activity_request_friend"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RegisterSocialLoginActivity" />
+        <activity android:name=".ShowFriendList" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".GuideActivity"></activity>
+    </application>
+
+</manifest>

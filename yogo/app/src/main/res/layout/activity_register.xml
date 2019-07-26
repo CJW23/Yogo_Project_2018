@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yogo.pjh.weather_projcect_v10.RegisterActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/registerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="회원가입"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="67dp"
+                tools:layout_editor_absoluteY="442dp" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginRight="65dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/idText"
+                        android:layout_width="170dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:drawableLeft="@drawable/ic_person_black_24dp"
+                        android:drawableStart="@drawable/ic_person_black_24dp"
+                        android:ems="10"
+                        android:hint="아이디"
+                        android:inputType="textPersonName"
+                        android:padding="10dp" />
+
+                    <Button
+                        android:id="@+id/idcheckButton"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/colorPrimary"
+                        android:text="중복체크"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/passwordText"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:ems="10"
+                    android:hint="비밀번호(영문 숫자 조합(8~15)"
+                    android:textSize="10dp"
+                    android:inputType="textPassword"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/checkpasswordText"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:ems="10"
+                    android:hint="비밀번호 확인"
+                    android:inputType="textPassword"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/nameText"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:drawableStart="@drawable/ic_person_black_24dp"
+                    android:ems="10"
+                    android:hint="이름"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/ageText"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_edit_black_24dp"
+                    android:drawableStart="@drawable/ic_edit_black_24dp"
+                    android:ems="10"
+                    android:hint="나이"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/emailText"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_edit_black_24dp"
+                    android:drawableStart="@drawable/ic_edit_black_24dp"
+                    android:ems="10"
+                    android:hint="이메일"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+                <RadioGroup
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/genderGroup"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="남자"
+                        android:id="@+id/man"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="여자"
+                        android:id="@+id/woman"/>
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+        </ScrollView>
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="가입 신청"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
