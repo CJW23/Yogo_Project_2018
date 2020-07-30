@@ -16,5 +16,3 @@
 <img src="https://user-images.githubusercontent.com/32676275/61850538-89926400-aeef-11e9-8479-112dff2947f6.png" width="200" height="400"><img src="https://user-images.githubusercontent.com/32676275/61850547-8bf4be00-aeef-11e9-9eed-3ae4de771f92.png" width="200" height="400">
 
 
-
-<a href="http://localhost:8000/dY5uN6r">awdaw</a>
